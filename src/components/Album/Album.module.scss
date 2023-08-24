@@ -1,6 +1,6 @@
 .album {
     position: relative;
-    flex: 1;
+    flex: 0 1 auto;
     max-width: 33vw;
 
     &:before {
@@ -21,7 +21,7 @@
     }
 
     &__name {
-        font-size: 12px;
+        font-size: 0.75rem;
         color: lightgray;
         padding: 5px;
         bottom: 5%;

@@ -17,9 +17,15 @@
         background: #656668;
         color: white;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 0.75rem;
         appearance: none;
         border: none;
         padding: 8px 0;
+        cursor: pointer;
+
+        @media (min-width: 769px) {
+            font-size: 1rem;
+            padding: 12px;
+        }
     }
 }

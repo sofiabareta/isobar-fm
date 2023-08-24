@@ -2,11 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: #eeeff1;
 
     &__results {
-        font-size: 12px;
-        color: var(--text-primary)
+        font-size: 0.75rem;
+        color: var(--text-primary);
+
+        @media (min-width: 769px) {
+            font-size: 1rem;
+        }
     }
 
     &__select {

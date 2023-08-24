@@ -1,5 +1,6 @@
 import Search from '../Search';
 import Logo from '../Logo';
+import Container from '../UI/Container'
 
 import styles from './Header.module.scss'
 import { useLocation } from 'react-router-dom';
@@ -9,8 +10,12 @@ const Header = ({ onSearch }) => {
 
     return (
         <header className={styles.header}>
-            {location === "/" && <Search onSearch={onSearch}/>}
-            <Logo />
+            <Container>
+                <div className={styles.header__wrapper}>
+                    {location === "/" && <Search onSearch={onSearch}/>}
+                    <Logo />
+                </div>
+            </Container>
         </header>
     );
 }

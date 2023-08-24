@@ -2,13 +2,20 @@
     &__biography {
         margin-top: 60px;
         margin-bottom: 24px;
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 1.2;
         color: var(--text-primary);
         max-height: 150px;
         position: relative;
         overflow: hidden;
         transition: overflow linear 0.3s;
+        cursor: pointer;
+
+        @media (min-width: 769px) {
+            font-size: 1.2rem;
+            margin-bottom: 32px;
+            cursor: auto;
+        }
 
         
         &:before {
@@ -26,10 +33,10 @@
         &:after {
             content: "+";
             position: absolute;
-            top: 100px;
+            top: 75px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 36px;
+            font-size: 2rem;
         }
         
         &--isOpen {

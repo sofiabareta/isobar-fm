@@ -12,14 +12,22 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media (min-width: 769px) {
+            width: 80px;
+        }
     }
 
     &__genre, 
     &__plays {
         text-transform: uppercase;
         color: var(--text-primary);
-        font-size: 12px;
+        font-size: 0.75rem;
         top: 10px;
         position: relative;
+
+        @media (min-width: 769px) {
+            font-size: 1rem;
+        }
     }
 }
