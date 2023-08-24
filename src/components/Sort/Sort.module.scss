@@ -1,0 +1,22 @@
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #eeeff1;
+
+    &__results {
+        font-size: 12px;
+        color: var(--text-primary)
+    }
+
+    &__select {
+        display: block;
+        position: absolute;
+        right: 24px;
+        text-align: right;
+        top: 100%;
+        width: 150px;
+        background: darkgray;
+        padding: 8px;
+    }
+}

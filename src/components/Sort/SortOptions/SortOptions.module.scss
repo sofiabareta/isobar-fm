@@ -1,0 +1,25 @@
+.sort {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background: #656668;
+    padding: 12px;
+    width: 35vw;
+    top: calc(100% - 3px);
+
+    &__list {
+        display: none;
+    }
+
+    &__option {
+        width: 100%;
+        text-align: right;
+        background: #656668;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        appearance: none;
+        border: none;
+        padding: 8px 0;
+    }
+}
